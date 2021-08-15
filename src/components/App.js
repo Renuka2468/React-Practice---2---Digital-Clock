@@ -19,7 +19,7 @@ class App extends Component {
             this.setState({time : getCurrentTime() });
         },1000);
     }
-    componentWillUnMount(){
+    componentWillUnmount(){
         clearInterval(this.xyz);
     }
     render() {
